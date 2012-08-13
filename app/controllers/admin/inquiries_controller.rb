@@ -1,9 +1,9 @@
-class Admin::InquiriesController < Admin::BaseController
+class Admin::InquiriesController < Spree::Admin::BaseController
 
-  resource_controller
+  #resource_controller
   layout 'admin'
 
-  destroy.success.wants.js { render_js_for_destroy }
+  #destroy.success.wants.js { render_js_for_destroy }
 
   def collection
     return @collection if @collection.present?

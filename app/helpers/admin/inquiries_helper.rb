@@ -1,2 +1,2 @@
-module Admin::InquiriesHelper
+module Spree::Admin::InquiriesHelper
 end
