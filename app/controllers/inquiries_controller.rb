@@ -1,6 +1,6 @@
 class InquiriesController < Spree::BaseController
   helper 'spree/base'
-  resource_controller
+  #resource_controller
 
   def create
     @inquiry = Inquiry.new(params[:inquiry])
@@ -16,8 +16,18 @@ class InquiriesController < Spree::BaseController
 
   #create.flash I18n.t(:on_send_message)
 
+   def new
+    @inquiry = Inquiry.new
+
+    respond_to do |format|
+      format.html # new.html.erb
+      #format.json { render json: @admin_supplier_type }
+    end
+  end
+
   def index
-    redirect_to(new_inquiry_url) unless params[:inquiry]
+    #redirect_to(new_inquiry_url) unless params[:inquiry]
+    @inquiry = Inquiry.all
   end
 
 end

@@ -1,0 +1,10 @@
+<h1>Inquiries</h1>
+
+<p />
+<% @inquiry.each do |inquiry| %>
+    <%= "#{inquiry.email} #{inquiry.message}" %>
+    <br />
+<% end %>
+
+<p />
+<%= link_to 'New Inquiry', 'inquiries/new' %>
