@@ -1,4 +1,4 @@
-class Admin::InquiriesController < Spree::Admin::BaseController
+class Spree::Admin::InquiriesController < Spree::Admin::BaseController
 
   #resource_controller
   layout 'admin'
