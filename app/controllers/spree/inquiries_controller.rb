@@ -1,4 +1,4 @@
-class InquiriesController < Spree::BaseController
+class Spree::InquiriesController < Spree::BaseController
   helper 'spree/base'
   #resource_controller
 
